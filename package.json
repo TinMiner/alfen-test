@@ -1,0 +1,15 @@
+{
+  "name": "alfen",
+  "version": "1.0.0",
+  "description": "tech test for alfen",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-nobots": "^1.0.5"
+  }
+}

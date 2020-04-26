@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Subscribe Your Interest</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <a href='./customerlist'>Customer List</a><br><br>
+    <div class="wrap">
+        <form id="send" action="http://localhost:3005" method="post">
+            <div>
+                <input type="text" required name="UserName" placeholder="Name" />
+            </div>
+            <br>
+            <div>
+                <input type="email" required name="Email" placeholder="Email" />
+            </div>
+            <br>
+            <div>
+                <textarea form="send" required rows="20" cols="40" name="message">Your message</textarea>
+            </div>
+            <p>Do You Wish To Subscribe to updates</p>
+            <input type="radio" id="no" name="subscribe" value="yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="subscribe" value="no">
+            <label for="no">No</label><br>
+            <input type="submit" name="submit" />
+        </form>
+    </div>
+</body>
+
+</html>

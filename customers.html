@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customers</title>
+    
+</head>
+<body>
+<h1>Client List</h1>
+<script>
+    const fs = require('fs');
+    function loadJSON(filename = '') {
+		return JSON.parse(
+		  fs.existsSync(filename)
+		   ? fs.readFileSync(filename).toString()
+		 : '""'
+		)
+	 }
+	 
+	 const data = loadJSON('./data/array.txt')
+	 
+	 var newArr = data.customer.map(function(val, index){ 
+		return {key:index, value:val}; 
+	 }) 
+			   
+	 console.log(newArr) 
+	 
+	 var i;
+	 for (i = 0; i < data.customer.length; i++) {
+	   document.write(data.customer[i])
+	 } 
+	
+    </script>
+	
+</body>
+</html>
